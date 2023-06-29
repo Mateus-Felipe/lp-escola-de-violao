@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    width: 80%;
+    height: 50px;
+    background-color: var(--dark-easy);
+    border: 1px solid var(--cyan);
+    color: var(--white);
+    // border-color: var(--cyan);
+    border-radius: 50px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    transition: transform .2s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
