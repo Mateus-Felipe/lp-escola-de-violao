@@ -1,11 +1,11 @@
-.Container {
+.container {
     width: 100%;
     height: 900px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem 25rem;
+    padding: 2.5rem 20rem;
     color: var(--white);
     background-image: 
     linear-gradient(to right top,
@@ -30,7 +30,7 @@
 }
 
 .containerCTA {
-    width: 40%;
+    width: 50%;
     color: var(--white);
     display: flex;
     justify-content: right;
@@ -104,6 +104,91 @@
         background-color: var(--white);
         filter: opacity(30%);
     }
-    div {
+}
+
+.responsiveButton {
+    width: 90%;
+    button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .Container {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 0;
+        align-items: center;
+    }
+
+    .containerInfo {
+        width: 90%;
+        height: 115%;
+    }
+
+    .containerCTA {
+        justify-content: center;
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .CTABox {
+        width: 90%;
+    }
+
+    .description {
+        display: none;
+    }
+    .CTAContent {
+        div {
+            h1 {
+                font-size: 3.5rem !important;
+            }
+        }
+    }
+
+    .icons {
+        justify-content: space-evenly;
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .violao {
+        margin-bottom: 0;
+    }
+
+    .responsiveButton {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .container {
+        padding: 2.5rem 6rem;
+    }
+    .containerInfo {
+        width: 45% !important;
+    }
+    .containerCTA {
+        width: 55%;
+    }
+    .responsiveButton {
+        width: 85%;
+        button {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .container {
+        padding: 2.5rem .5rem;
+        flex-direction: column;
+    }
+    .CTABox {
+        width: 100% !important;
     }
 }

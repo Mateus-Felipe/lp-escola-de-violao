@@ -69,3 +69,20 @@
 .itemBtnExpanded .chevron {
     transform: rotate(180deg);
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024){
+    
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        padding: 0;
+        h1 {
+            margin: 2rem;
+        }
+    }
+    .accordion {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}

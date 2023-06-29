@@ -9,13 +9,13 @@ import Button from '@/components/Button/Button'
 
 export default function FirstBanner() {
     return (
-        <div className={styles.Container}>
+        <div className={styles.container}>
             <div className={styles.containerInfo}>
                 <h1>
                     Aprenda a tocar Violão com a maior escola
                     de musica do Brasil
                 </h1>
-                <p className=" description">Agora não tem mais desculpas para você
+                <p className={styles.description}>Agora não tem mais desculpas para você
                     dizer que não consegue aprender a
                     tocar violão
                 </p>
@@ -47,8 +47,9 @@ export default function FirstBanner() {
                         </div>
                         <p>por mês*</p>
                     </div>
-                    {/* <button>Quero começar agora</button> */}
-                    <Button />
+                    <div className={styles.responsiveButton}>
+                        <Button />
+                    </div>
                 </div>
             </div>
         </div>

@@ -60,3 +60,39 @@
     }
 
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .container {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .containerReview {
+        width: auto !important;
+    }
+    .reviewText {
+        height: 275px !important;
+        padding: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px){ 
+    .container {
+        padding: 0;
+    }
+    .containerReview {
+        flex-direction: column !important;
+        .reviewContent {
+            width: 100% !important;
+            align-items: flex-start !important;
+            padding: 2rem 0 !important;
+            .reviewText {
+                height: auto !important;
+                padding: 1.5rem !important;
+                h1 {
+                    font-size: 1.35rem !important;
+                    padding-left: 0 !important;
+                }
+            }
+        }
+    }
+}

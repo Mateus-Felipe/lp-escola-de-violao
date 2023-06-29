@@ -57,3 +57,32 @@
         filter: invert(100%);
     }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    .container {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        height: auto;
+        padding: 5rem 0;
+        flex-direction: column;
+    }
+    .info {
+        width: 85% !important;
+        h1 {
+            text-align: center;
+        }
+        p {
+            margin: 4rem 0;
+        }
+        button {
+            margin-bottom: 4rem;
+        }
+    }
+    .icons {
+        width: 100%;
+    }
+}

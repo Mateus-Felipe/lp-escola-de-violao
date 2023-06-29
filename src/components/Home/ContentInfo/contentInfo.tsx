@@ -29,8 +29,8 @@ export default function ContentInfo(){
                     </p>
                 </div>
             </div>
-            <div style={{ width: '50%', marginTop: '9rem' }}>
-                <Button />
+            <div style={{ width: '50%', marginTop: '9rem' }} className={styles.responsiveButton}>
+                <Button mobileWidth='100%' />
             </div>
         </div>
     )
